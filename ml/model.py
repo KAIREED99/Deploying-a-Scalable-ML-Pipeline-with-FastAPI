@@ -89,7 +89,6 @@ def load_model(path):
     with open(path, "rb") as f:
        return pickle.load(f)
 
-    return model
 
 def performance_on_categorical_slice(
     data, column_name, slice_value, categorical_features, label, encoder, lb, model
